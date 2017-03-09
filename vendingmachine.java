@@ -15,7 +15,6 @@ showdrinks(choice);
 showbalace(sumCoininsert, price);
 contmethod(cont);
 } 
-/*****************showmenu method*****************/
 public static int showmenu (int coin, int drink)
 { 
 int coin;
@@ -23,8 +22,6 @@ int drink;
 System.out.println("[Coins available : RM 1 [" + coin[0] + "] RM0.50 [ " + coin[1] + "] RM 0.20 [ " + coin[2] + "] RM0.10 [" +coin[3] "] ]");
 System.out.println("[Drinks available : Pepsi [" + drink[0] + "] Coke [" + drink[1] + "] Mirinda Orange [" + drink[2] + "] 7up [" + drink[3] + "] ]");
 }
-/********************showmenu method*****************/
-/**************inputcoin method *******************/
 public static double inputcoin (double coinInsert)
 {
 double coinInsert = 0, sumCoininsert = 0; 
@@ -43,8 +40,6 @@ double coinInsert = sc.nextDouble();
 }
 System.out.println (" Total :" +sumCoinInsert);
 }
-/********************inputcoin method*******************/
-/***************coinInc method************************/ 
 public static double coinInc(int coinInsert)
 {
 double coinInsert;
@@ -70,8 +65,6 @@ double coinInsert = sc.nextDouble();
 break;
 }
 }
-/******************coinInc method*********************/
-/*****************showdrinks method **************/
 public static int showdrinks (int choice)
 {
 int choice;
@@ -100,8 +93,6 @@ System.out.println("Invalid choice");
 System.out.println("Choice==>");
 int choice = sc.nextInt(); 
 }
-/*****************showdrinks method **************/
-/****************showbalance method*******************/
 public static double showbalance(double sumCoininsert, double price)
 {
 double price = 1.2, balance = 0, sumCoininsert;
@@ -116,8 +107,6 @@ System.out.println("\n:" +fifty+ "x50" " " +twenty+ "x20" " " +tenth+ "x10" );
 System.out.println("Your balance is :" +balance);
 }
 }
-/****************showbalance method*******************/
-/****************countbalance method******************/
 public static double countbalance(double balance) 
 {
 double balance;
@@ -141,8 +130,6 @@ if (tenth != 0)
 coin[3]--;
 }
 }
-/*************countbalance method*********************/
-/************************contmethod*****************************/
 public static String contmethod (char cont)
 {
 char cont;
@@ -157,5 +144,4 @@ continue ;
 System.out.println("Thank You, Please come again.");
 System.exit(0);
 }
-} 
-/****************contmethod*******************/
+}
