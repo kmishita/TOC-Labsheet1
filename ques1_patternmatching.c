@@ -9,9 +9,9 @@ void patternPrint(char *pat, char *txt);
 
 int main()
 {
-	char string[charLen] ;
-	char pat[10];
-	printf("Enter the pattern \n");
+	char *string="xyzzzyxyxyzz" ;
+	char *pat="xyzz";
+	/*printf("Enter the pattern \n");
 	scanf("%s",&pat);
 	printf("\nEnter the string \n");
 	scanf("%s",&string);*/
