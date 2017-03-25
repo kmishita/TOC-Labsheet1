@@ -1,12 +1,12 @@
 #include<stdio.h>
-#include<conio.h>
+#include<stdlib.h>
 #include<string.h>
 void main()
 {
 	struct current{int first,last;}stat[15];
 	int l,j,change,n=0,i=0,state=1,x,y,start,final;
 	char store,*input1,input[15];
-	clrscr();
+	
 	printf("\n\n****ENTER THE REGULAR EXPRESSION****\n\n");
 	scanf("%s",input1);/*ex inputs:1.(a*) 2.(a|b) 3.(a.b) 4.((a|b).(a*))*/
 	for(i=0;i<10;i++)
@@ -159,6 +159,7 @@ i++;
 }
 printf("\n the starting state is %d",start);
 printf("\n the final state is %d",final);
-getch();
+getchar();
+return 0;
 }
 
